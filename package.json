@@ -1,0 +1,18 @@
+{
+  "name": "bothauz-website",
+  "version": "1.0.0",
+  "description": "BotHauz AI automation agency website",
+  "private": true,
+  "scripts": {
+    "dev": "cd project && npm run dev",
+    "build": "cd project && npm run build",
+    "preview": "cd project && npm run preview",
+    "lint": "cd project && npm run lint"
+  },
+  "workspaces": [
+    "project"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 
