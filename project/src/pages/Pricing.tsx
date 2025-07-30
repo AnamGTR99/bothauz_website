@@ -6,70 +6,54 @@ import HolographicCard from '../components/HolographicCard';
 import ParticleField from '../components/ParticleField';
 
 const Pricing = () => {
-  const aiPhases = [
+  const projectPhases = [
     {
       phase: "01",
-      title: "Prompt-Driven Automations",
-      priceRange: "$2,500 - $8,000",
-      description: "We embed lightweight prompt chains directly into workflows, turning routine clicks into context aware actions. This low-latency layer delivers measurable productivity gains within weeks.",
+      title: "Discovery Phase",
+      priceRange: "$20K - $35K AUD",
+      description: "We begin with comprehensive stakeholder workshops, data audits, and value mapping to create a detailed solution blueprint aligned with your business objectives.",
       features: [
-        "Lightweight prompt chains",
-        "Context-aware actions",
-        "Low-latency implementation",
-        "Measurable productivity gains",
-        "2-3 week delivery",
-        "Basic analytics dashboard"
+        "Stakeholder Workshops",
+        "Data Audit",
+        "Value Mapping",
+        "Solution Blueprint",
+        "Risk Alignment",
+        "ROI Forecast"
       ],
       icon: Bot,
       color: "from-blue-600/20 to-purple-600/20"
     },
     {
       phase: "02", 
-      title: "Precision Fine-Tuning",
-      priceRange: "$8,000 - $25,000",
-      description: "Custom AI models fine-tuned for your specific business needs. We optimize existing models to understand your industry, terminology, and processes with exceptional accuracy.",
+      title: "Engineering & Implementation Phase",
+      priceRange: "$60K - $120K AUD",
+      description: "Our engineering team delivers your AI solution through agile sprints, ensuring seamless system integration, model refinement, and production-ready deployment.",
       features: [
-        "Custom model fine-tuning",
-        "Industry-specific training",
-        "Process optimization",
-        "Advanced analytics",
-        "4-6 week delivery",
-        "Comprehensive testing"
+        "Agile Sprints",
+        "System Integration",
+        "Model Refinement",
+        "Security Hardening",
+        "User Training",
+        "Production Launch"
       ],
       icon: Zap,
       color: "from-purple-600/20 to-pink-600/20"
     },
     {
       phase: "03",
-      title: "Contextual RAG Engines",
-      priceRange: "$15,000 - $50,000", 
-      description: "Advanced retrieval-augmented generation systems that surface the right information at the right time. Perfect for knowledge management and intelligent document processing.",
+      title: "Ongoing Support & Optimisation Phase",
+      priceRange: "$1K - $2K AUD",
+      description: "Continuous monitoring, performance optimization, and feature rollouts ensure your AI solution evolves with your business and delivers sustained value.",
       features: [
-        "Advanced RAG architecture",
-        "Knowledge management",
-        "Intelligent document processing",
-        "Real-time information retrieval",
-        "6-8 week delivery",
-        "Custom API development"
+        "Performance Monitoring",
+        "Continuous Tuning",
+        "Feature Rollouts",
+        "Usage Analytics",
+        "Cost Optimisation",
+        "Regular Updates"
       ],
       icon: Headphones,
       color: "from-pink-600/20 to-red-600/20"
-    },
-    {
-      phase: "04",
-      title: "Bespoke LLM Architectures",
-      priceRange: "$50,000+",
-      description: "Fully custom large language models built from the ground up for your unique requirements. Complete ownership and control over your AI infrastructure.",
-      features: [
-        "Custom LLM development",
-        "Complete infrastructure ownership",
-        "Full model control",
-        "Enterprise-grade security",
-        "8-12 week delivery",
-        "Dedicated engineering team"
-      ],
-      icon: Users,
-      color: "from-red-600/20 to-orange-600/20"
     }
   ];
 
@@ -128,10 +112,10 @@ const Pricing = () => {
           <div className="text-center space-y-8 relative z-10">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
-                AI Investment Phases
+                Transparent Pricing
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                From prompt-level lift to bespoke large-language models, our engineering muscle scales as far as your ambition.
+                Pricing varies based on business complexity and needs. Our clients can scale their engagement as we deliver critical results.
               </p>
             </div>
 
@@ -160,15 +144,15 @@ const Pricing = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                AI Implementation Phases
+                Project Phases
               </h2>
               <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-                From prompt-level lift to bespoke large-language models, our engineering muscle scales as far as your ambition.
+                Our proven three-phase approach ensures successful AI implementation from discovery to ongoing optimization.
               </p>
             </div>
 
             <div className="space-y-8">
-              {aiPhases.map((phase, index) => {
+              {projectPhases.map((phase, index) => {
                 const IconComponent = phase.icon;
                 return (
                   <HolographicCard 
@@ -228,10 +212,10 @@ const Pricing = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Future-Proof AI Infrastructure
+                Why Choose Our Process
               </h2>
               <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-                Systems that scale seamlessly with your business growth and technological advancement.
+                Our proven three-phase approach ensures successful AI implementation and sustained business value.
               </p>
             </div>
 
@@ -270,28 +254,28 @@ const Pricing = () => {
               <HolographicCard className="p-6">
                 <h3 className="text-xl font-bold text-white mb-3">How do you determine pricing for each phase?</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Pricing is based on the complexity of implementation, data requirements, and integration needs. We provide detailed proposals with exact deliverables before any work begins.
+                  Pricing varies based on business complexity, data requirements, and integration needs. We provide detailed proposals with exact deliverables before any work begins.
                 </p>
               </HolographicCard>
 
               <HolographicCard className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Can we start with Phase 1 and scale up?</h3>
+                <h3 className="text-xl font-bold text-white mb-3">Can we start with the Discovery Phase only?</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Absolutely! Many clients start with prompt-driven automations and gradually scale to more advanced phases as they see results and business needs evolve.
+                  Absolutely! Many clients begin with the Discovery Phase to understand their AI opportunities and then decide on next steps based on the findings and ROI forecast.
                 </p>
               </HolographicCard>
 
               <HolographicCard className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">What's the difference between fine-tuning and RAG?</h3>
+                <h3 className="text-xl font-bold text-white mb-3">What's included in the Ongoing Support phase?</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Fine-tuning adapts existing models to your specific domain, while RAG systems retrieve and generate responses from your knowledge base. Both can be used together for optimal results.
+                  Ongoing support includes performance monitoring, continuous tuning, feature rollouts, usage analytics, and cost optimization to ensure sustained value delivery.
                 </p>
               </HolographicCard>
 
               <HolographicCard className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Do you offer ongoing maintenance and optimization?</h3>
+                <h3 className="text-xl font-bold text-white mb-3">Do you offer enterprise plans?</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Yes, we offer ongoing support packages to ensure your AI solutions continue to deliver value as your business grows and technology evolves.
+                  Yes, we offer custom enterprise plans for large-scale AI implementations. Contact our sales team for detailed enterprise pricing and solutions.
                 </p>
               </HolographicCard>
             </div>
