@@ -10,6 +10,7 @@ import TrustBadges from '../components/TrustBadges';
 import ParticleField from '../components/ParticleField';
 import HolographicCard from '../components/HolographicCard';
 import TeamSection from '../components/TeamSection';
+import LogoCarousel from '../components/LogoCarousel';
 
 const Home = () => {
   return (
@@ -283,9 +284,26 @@ const Home = () => {
         </section>
       </ScrollAnimation>
 
+      {/* Company Logos Carousel */}
+      <ScrollAnimation>
+        <section className="py-16 bg-gray-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Trusted by Industry Leaders
+              </h2>
+              <p className="text-lg text-gray-300">
+                Companies that have transformed their operations with BotHauz AI solutions.
+              </p>
+            </div>
+            <LogoCarousel />
+          </div>
+        </section>
+      </ScrollAnimation>
+
       {/* Testimonials Preview */}
       <ScrollAnimation>
-        <section className="py-20 bg-gray-800 text-white">
+        <section className="py-20 bg-gray-900 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
